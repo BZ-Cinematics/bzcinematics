@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BZ Cinematics - premium photography, cinematic visuals, galleries, photo packages, and print ordering." />
+  <title>BZ Cinematics | Premium Photography</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="site-bg" aria-hidden="true">
+    <div class="mesh mesh-a"></div>
+    <div class="mesh mesh-b"></div>
+    <div class="mesh mesh-c"></div>
+    <div class="grid-overlay"></div>
+    <div class="noise-layer"></div>
+  </div>
+
+  <header class="header" id="header">
+    <a class="brand" href="index.html" aria-label="BZ Cinematics Home">
+      <span class="brand-mark">BZ</span>
+      <span class="brand-name">Cinematics</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#prints">Prints</a>
+      <a href="upload.html">Upload</a>
+      <a href="#contact">Book</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero-rings" aria-hidden="true"></div>
+
+      <div class="hero-content reveal">
+        <div class="kicker"><span></span> bzcinematics.com</div>
+        <h1 class="hero-title">Cinematic photos with a modern edge.</h1>
+        <p class="hero-text">Clean portraits, events, car shoots, sports moments, and polished photo prints built around a dark luxury style.</p>
+        <div class="hero-actions">
+          <a class="button button-main magnetic" href="gallery.html">View Gallery</a>
+          <a class="button button-ghost magnetic" href="#contact">Book a Shoot</a>
+        </div>
+        <div class="hero-metrics" aria-label="Studio highlights">
+          <div><strong>01</strong><span>Shot</span></div>
+          <div><strong>02</strong><span>Edited</span></div>
+          <div><strong>03</strong><span>Delivered</span></div>
+        </div>
+      </div>
+
+      <div class="hero-showcase reveal delay-1">
+        <div class="device-frame tilt" data-code="POR1">
+          <img src="images/POR1.JPG" data-fallback="images/POR1.jpg" alt="" />
+          <div class="glass-caption">
+            <span>Featured Frame</span>
+            <strong>POR1</strong>
+          </div>
+        </div>
+        <div class="holo-card holo-a">
+          <span>4K</span>
+          <p>Sharp edits</p>
+        </div>
+        <div class="holo-card holo-b">
+          <span>20</span>
+          <p>Featured frames</p>
+        </div>
+        <div class="orbit-dot"></div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-label="Services">
+      <div class="marquee-track">
+        <span>Portraits</span><span>Events</span><span>Prom</span><span>Cars</span><span>Sports</span><span>Prints</span><span>Brand Shoots</span>
+        <span>Portraits</span><span>Events</span><span>Prom</span><span>Cars</span><span>Sports</span><span>Prints</span><span>Brand Shoots</span>
+      </div>
+    </section>
+
+    <section class="section stats-strip reveal">
+      <div>
+        <strong>Portraits</strong>
+        <span>Clean cinematic edits</span>
+      </div>
+      <div>
+        <strong>Events</strong>
+        <span>Proms, parties, sports, moments</span>
+      </div>
+      <div>
+        <strong>Prints</strong>
+        <span>Glossy, matte, framed options</span>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <div class="section-copy reveal">
+        <p class="eyebrow">About the style</p>
+        <h2>Built to look sharp, expensive, and cinematic.</h2>
+        <p>BZ Cinematics focuses on strong contrast, clean framing, and polished edits that feel more like a movie still than a basic photo dump.</p>
+        <a class="text-link magnetic" href="gallery.html">Explore the full gallery →</a>
+      </div>
+
+      <div class="feature-grid reveal delay-1">
+        <article class="glass-card tilt">
+          <span class="card-number">01</span>
+          <h3>Modern Sessions</h3>
+          <p>Portraits, prom shoots, car shoots, events, and creative visuals.</p>
+        </article>
+        <article class="glass-card tilt">
+          <span class="card-number">02</span>
+          <h3>Fast Delivery</h3>
+          <p>Edited photo sets made to be easy to share, post, and print.</p>
+        </article>
+        <article class="glass-card tilt">
+          <span class="card-number">03</span>
+          <h3>Print Orders</h3>
+          <p>Choose photo number, size, finish, quantity, and extras.</p>
+        </article>
+        <article class="glass-card tilt">
+          <span class="card-number">04</span>
+          <h3>Private Galleries</h3>
+          <p>Numbered galleries make print ordering simple for clients.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section preview-section">
+      <div class="section-head reveal">
+        <p class="eyebrow">Portfolio</p>
+        <h2>Featured gallery frames</h2>
+        <p>Portraits, events, automotive work, and nature images with a polished cinematic finish.</p>
+      </div>
+
+      <div class="preview-grid reveal delay-1">
+        <a href="gallery.html" data-code="POR2" class="preview-item tall tilt">
+          <img loading="lazy" decoding="async" src="images/POR2.JPG" data-fallback="images/POR2.jpg" alt="" />
+          <span>POR2</span>
+        </a>
+        <a href="gallery.html" data-code="EVE1" class="preview-item tilt">
+          <img loading="lazy" decoding="async" src="images/EVE1.JPG" data-fallback="images/EVE1.jpg" alt="" />
+          <span>EVE1</span>
+        </a>
+        <a href="gallery.html" data-code="AUT1" class="preview-item tilt">
+          <img loading="lazy" decoding="async" src="images/AUT1.JPG" data-fallback="images/AUT1.jpg" alt="" />
+          <span>AUT1</span>
+        </a>
+        <a href="gallery.html" data-code="NAT1" class="preview-item wide tilt">
+          <img loading="lazy" decoding="async" src="images/NAT1.JPG" data-fallback="images/NAT1.jpg" alt="" />
+          <span>NAT1</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="section pricing-section" id="pricing">
+      <div class="section-head reveal">
+        <p class="eyebrow">Packages</p>
+        <h2>General pricing</h2>
+        <p>Clean packages for portraits, events, cars, sports, and creative sessions.</p>
+      </div>
+
+      <div class="pricing-grid reveal delay-1">
+        <article class="price-card tilt">
+          <div class="package-top">
+            <h3>Basic</h3>
+            <strong>$200</strong>
+          </div>
+          <ul>
+            <li>1 hour shoot</li>
+            <li>1 location</li>
+            <li>10 edited photos</li>
+            <li>50 non-edited photos</li>
+          </ul>
+          <a class="button button-ghost magnetic" href="#contact">Book Basic</a>
+        </article>
+
+        <article class="price-card featured tilt">
+          <div class="badge">Most Popular</div>
+          <div class="package-top">
+            <h3>Standard</h3>
+            <strong>$300</strong>
+          </div>
+          <ul>
+            <li>2.5 hour shoot</li>
+            <li>Up to 3 locations</li>
+            <li>30 edited photos</li>
+            <li>75 non-edited photos</li>
+          </ul>
+          <a class="button button-main magnetic" href="#contact">Book Standard</a>
+        </article>
+
+        <article class="price-card tilt">
+          <div class="package-top">
+            <h3>Premium</h3>
+            <strong>$500</strong>
+          </div>
+          <ul>
+            <li>4 hour shoot</li>
+            <li>Unlimited local locations</li>
+            <li>50 edited photos</li>
+            <li>150 non-edited photos</li>
+          </ul>
+          <a class="button button-ghost magnetic" href="#contact">Book Premium</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section prints-section" id="prints">
+      <div class="print-panel reveal tilt">
+        <div class="print-info">
+          <p class="eyebrow">Print Shop</p>
+          <h2>Order photo prints</h2>
+          <p>Select the image code, print size, finish, quantity, and delivery option.</p>
+          <div class="print-highlights">
+            <span>Glossy</span><span>Matte</span><span>Framed</span><span>Digital</span>
+          </div>
+        </div>
+
+        <form class="print-form" id="printForm" action="https://formspree.io/f/mdavzope" method="POST">
+          <input type="hidden" name="_subject" value="New BZ Cinematics Print Order" />
+          <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" />
+          <label>Full Name
+            <input name="name" type="text" placeholder="Your name" required />
+          </label>
+          <label>Email
+            <input name="email" type="email" placeholder="you@example.com" required />
+          </label>
+          <label>Image Code
+            <input id="photoNumber" name="image_code" type="text" placeholder="POR1, EVE3, AUT4, NAT2" required />
+          </label>
+
+          <div class="form-row">
+            <label>Size
+              <select id="printSize" name="print_size">
+                <option value="4x6" data-price="5">4x6 — $5</option>
+                <option value="5x7" data-price="8">5x7 — $8</option>
+                <option value="8x10" data-price="15">8x10 — $15</option>
+                <option value="11x14" data-price="25">11x14 — $25</option>
+                <option value="16x20" data-price="40">16x20 — $40</option>
+              </select>
+            </label>
+
+            <label>Quantity
+              <input id="quantity" name="quantity" type="number" min="1" value="1" />
+            </label>
+          </div>
+
+          <div class="form-row">
+            <label>Finish
+              <select id="finish" name="finish">
+                <option value="Glossy" data-price="0">Glossy</option>
+                <option value="Matte" data-price="2">Matte +$2</option>
+              </select>
+            </label>
+
+            <label>Option
+              <select id="extraOption" name="option">
+                <option value="No extra" data-price="0">No extra</option>
+                <option value="White border" data-price="3">White border +$3</option>
+                <option value="Framed" data-price="20">Framed +$20</option>
+                <option value="Digital copy" data-price="10">Digital copy +$10</option>
+              </select>
+            </label>
+          </div>
+
+          <label>Delivery Preference
+            <select name="delivery_preference">
+              <option value="Pickup">Pickup</option>
+              <option value="Delivery">Delivery</option>
+              <option value="Shipping">Shipping</option>
+            </select>
+          </label>
+
+          <input id="printTotalHidden" name="estimated_total" type="hidden" value="$5" />
+          <div class="total-line">Estimated total <strong id="printTotal">$5</strong></div>
+          <button class="button button-main full magnetic" type="submit">Submit Print Order</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-head reveal">
+        <p class="eyebrow">Booking</p>
+        <h2>Start a shoot request</h2>
+        <p>Send the shoot type, preferred date, location, and session details.</p>
+      </div>
+
+      <form class="contact-form reveal delay-1" action="https://formspree.io/f/mdavzope" method="POST">
+        <input type="hidden" name="_subject" value="New BZ Cinematics Booking Request" />
+        <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" />
+        <div class="form-row">
+          <input name="name" type="text" placeholder="Your name" required />
+          <input name="email" type="email" placeholder="Your email" required />
+        </div>
+        <div class="form-row">
+          <input name="shoot_type" type="text" placeholder="Shoot type" />
+          <input name="requested_date" type="text" placeholder="Requested date" />
+        </div>
+        <input name="location" type="text" placeholder="Location" />
+        <textarea name="message" placeholder="Tell me what you need..." required></textarea>
+        <button class="button button-main full magnetic" type="submit">Send Booking Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>BZ Cinematics</strong>
+      <p>bzcinematics.com</p>
+    </div>
+    <div class="footer-links">
+      <a href="gallery.html">Gallery</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#prints">Prints</a>
+      <a href="#contact">Book</a>
+    </div>
+  </footer>
+</body>
+</html>

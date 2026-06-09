@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BZ Cinematics numbered photography gallery." />
+  <title>BZ Cinematics | Gallery</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="site-bg" aria-hidden="true">
+    <div class="mesh mesh-a"></div>
+    <div class="mesh mesh-b"></div>
+    <div class="mesh mesh-c"></div>
+    <div class="grid-overlay"></div>
+    <div class="noise-layer"></div>
+  </div>
+
+  <header class="header" id="header">
+    <a class="brand" href="index.html" aria-label="BZ Cinematics Home">
+      <span class="brand-mark">BZ</span>
+      <span class="brand-name">Cinematics</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#prints">Prints</a>
+      <a href="upload.html">Upload</a>
+      <a href="index.html#contact">Book</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="page-hero-content reveal">
+        <p class="kicker"><span></span> BZ Cinematics portfolio</p>
+        <h1>Photo Gallery</h1>
+        <p>Browse portraits, events, automotive work, and nature frames.</p>
+        <a class="button button-main magnetic" href="index.html#prints">Order Prints</a>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="gallery-tools reveal">
+        <div>
+          <p class="eyebrow">Portfolio</p>
+          <h2>Gallery Frames</h2>
+        </div>
+        <div class="filter-buttons" id="filterButtons">
+          <button class="filter-button active" data-filter="all">All</button>
+          <button class="filter-button" data-filter="portrait">Portrait</button>
+          <button class="filter-button" data-filter="event">Event</button>
+          <button class="filter-button" data-filter="automotive">Auto</button>
+          <button class="filter-button" data-filter="nature">Nature</button>
+        </div>
+      </div>
+
+      <div class="gallery-grid uniform reveal delay-1">
+        <article class="photo-card tilt" data-category="portrait" data-code="POR1">
+          <button class="photo-open" type="button" aria-label="Open POR1">
+            <img loading="lazy" decoding="async" src="images/POR1.JPG" data-fallback="images/POR1.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>POR1</span>
+            <p>PORTRAIT</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="portrait" data-code="POR2">
+          <button class="photo-open" type="button" aria-label="Open POR2">
+            <img loading="lazy" decoding="async" src="images/POR2.JPG" data-fallback="images/POR2.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>POR2</span>
+            <p>PORTRAIT</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="portrait" data-code="POR3">
+          <button class="photo-open" type="button" aria-label="Open POR3">
+            <img loading="lazy" decoding="async" src="images/POR3.JPG" data-fallback="images/POR3.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>POR3</span>
+            <p>PORTRAIT</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="portrait" data-code="POR4">
+          <button class="photo-open" type="button" aria-label="Open POR4">
+            <img loading="lazy" decoding="async" src="images/POR4.JPG" data-fallback="images/POR4.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>POR4</span>
+            <p>PORTRAIT</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="portrait" data-code="POR5">
+          <button class="photo-open" type="button" aria-label="Open POR5">
+            <img loading="lazy" decoding="async" src="images/POR5.JPG" data-fallback="images/POR5.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>POR5</span>
+            <p>PORTRAIT</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="event" data-code="EVE1">
+          <button class="photo-open" type="button" aria-label="Open EVE1">
+            <img loading="lazy" decoding="async" src="images/EVE1.JPG" data-fallback="images/EVE1.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>EVE1</span>
+            <p>EVENT</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="event" data-code="EVE2">
+          <button class="photo-open" type="button" aria-label="Open EVE2">
+            <img loading="lazy" decoding="async" src="images/EVE2.JPG" data-fallback="images/EVE2.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>EVE2</span>
+            <p>EVENT</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="event" data-code="EVE3">
+          <button class="photo-open" type="button" aria-label="Open EVE3">
+            <img loading="lazy" decoding="async" src="images/EVE3.JPG" data-fallback="images/EVE3.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>EVE3</span>
+            <p>EVENT</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="event" data-code="EVE4">
+          <button class="photo-open" type="button" aria-label="Open EVE4">
+            <img loading="lazy" decoding="async" src="images/EVE4.JPG" data-fallback="images/EVE4.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>EVE4</span>
+            <p>EVENT</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="event" data-code="EVE5">
+          <button class="photo-open" type="button" aria-label="Open EVE5">
+            <img loading="lazy" decoding="async" src="images/EVE5.JPG" data-fallback="images/EVE5.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>EVE5</span>
+            <p>EVENT</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="automotive" data-code="AUT1">
+          <button class="photo-open" type="button" aria-label="Open AUT1">
+            <img loading="lazy" decoding="async" src="images/AUT1.JPG" data-fallback="images/AUT1.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>AUT1</span>
+            <p>AUTO</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="automotive" data-code="AUT2">
+          <button class="photo-open" type="button" aria-label="Open AUT2">
+            <img loading="lazy" decoding="async" src="images/AUT2.JPG" data-fallback="images/AUT2.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>AUT2</span>
+            <p>AUTO</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="automotive" data-code="AUT3">
+          <button class="photo-open" type="button" aria-label="Open AUT3">
+            <img loading="lazy" decoding="async" src="images/AUT3.JPG" data-fallback="images/AUT3.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>AUT3</span>
+            <p>AUTO</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="automotive" data-code="AUT4">
+          <button class="photo-open" type="button" aria-label="Open AUT4">
+            <img loading="lazy" decoding="async" src="images/AUT4.JPG" data-fallback="images/AUT4.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>AUT4</span>
+            <p>AUTO</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="automotive" data-code="AUT5">
+          <button class="photo-open" type="button" aria-label="Open AUT5">
+            <img loading="lazy" decoding="async" src="images/AUT5.JPG" data-fallback="images/AUT5.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>AUT5</span>
+            <p>AUTO</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="nature" data-code="NAT1">
+          <button class="photo-open" type="button" aria-label="Open NAT1">
+            <img loading="lazy" decoding="async" src="images/NAT1.JPG" data-fallback="images/NAT1.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>NAT1</span>
+            <p>NATURE</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="nature" data-code="NAT2">
+          <button class="photo-open" type="button" aria-label="Open NAT2">
+            <img loading="lazy" decoding="async" src="images/NAT2.JPG" data-fallback="images/NAT2.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>NAT2</span>
+            <p>NATURE</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="nature" data-code="NAT3">
+          <button class="photo-open" type="button" aria-label="Open NAT3">
+            <img loading="lazy" decoding="async" src="images/NAT3.JPG" data-fallback="images/NAT3.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>NAT3</span>
+            <p>NATURE</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="nature" data-code="NAT4">
+          <button class="photo-open" type="button" aria-label="Open NAT4">
+            <img loading="lazy" decoding="async" src="images/NAT4.JPG" data-fallback="images/NAT4.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>NAT4</span>
+            <p>NATURE</p>
+          </div>
+        </article>
+        <article class="photo-card tilt" data-category="nature" data-code="NAT5">
+          <button class="photo-open" type="button" aria-label="Open NAT5">
+            <img loading="lazy" decoding="async" src="images/NAT5.JPG" data-fallback="images/NAT5.jpg" alt="" />
+            <span class="photo-shine"></span>
+          </button>
+          <div class="photo-meta">
+            <span>NAT5</span>
+            <p>NATURE</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button id="lightboxClose" aria-label="Close image">×</button>
+    <button id="lightboxPrev" class="lightbox-nav lightbox-prev" aria-label="Previous image">‹</button>
+    <img id="lightboxImg" src="" alt="" />
+    <div class="lightbox-loading" id="lightboxLoading" aria-hidden="true"></div>
+    <button id="lightboxNext" class="lightbox-nav lightbox-next" aria-label="Next image">›</button>
+    <div id="lightboxText"></div>
+  </div>
+
+  <footer class="footer">
+    <div>
+      <strong>BZ Cinematics</strong>
+      <p>bzcinematics.com</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#prints">Prints</a>
+      <a href="index.html#contact">Book</a>
+    </div>
+  </footer>
+</body>
+</html>

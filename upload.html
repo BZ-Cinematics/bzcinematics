@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="BZ Cinematics upload page for client files, references, and media." />
+  <title>BZ Cinematics | Upload</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="site-bg" aria-hidden="true">
+    <div class="mesh mesh-a"></div>
+    <div class="mesh mesh-b"></div>
+    <div class="mesh mesh-c"></div>
+    <div class="grid-overlay"></div>
+    <div class="noise-layer"></div>
+  </div>
+
+  <header class="header" id="header">
+    <a class="brand" href="index.html" aria-label="BZ Cinematics Home">
+      <span class="brand-mark">BZ</span>
+      <span class="brand-name">Cinematics</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open navigation" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+
+    <nav class="nav" id="nav">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#prints">Prints</a>
+      <a href="upload.html" class="active">Upload</a>
+      <a href="index.html#contact">Book</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero small-page">
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="page-hero-content reveal">
+        <p class="kicker"><span></span> Client upload</p>
+        <h1>Upload Files</h1>
+        <p>Submit photos, references, selections, or project details directly to BZ Cinematics.</p>
+      </div>
+    </section>
+
+    <section class="section upload-section">
+      <form class="upload-panel reveal tilt" action="https://formspree.io/f/mdavzope" method="POST" enctype="multipart/form-data">
+        <input type="hidden" name="_subject" value="New BZ Cinematics File Upload" />
+        <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" />
+        <div>
+          <p class="eyebrow">File Transfer</p>
+          <h2>Submit your files</h2>
+          <p>Send photo selections, event references, print requests, and project notes.</p>
+        </div>
+
+        <div class="upload-form-grid">
+          <input name="name" type="text" placeholder="Your name" required />
+          <input name="email" type="email" placeholder="Your email" required />
+          <input name="project_type" type="text" placeholder="Project type" />
+          <input name="photo_numbers" type="text" placeholder="Photo numbers" />
+        </div>
+
+        <label class="file-drop" for="imageUploader">
+          <input id="imageUploader" name="uploads" type="file" accept="image/*" multiple />
+          <span>+</span>
+          <strong>Select Files</strong>
+          <small>Images accepted</small>
+        </label>
+
+        <textarea name="message" placeholder="Add details for the upload..."></textarea>
+        <button class="button button-main full magnetic" type="submit">Submit Upload</button>
+      </form>
+
+      <div class="gallery-grid uniform upload-preview reveal delay-1" id="uploadPreview"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>BZ Cinematics</strong>
+      <p>bzcinematics.com</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="index.html#contact">Book</a>
+    </div>
+  </footer>
+</body>
+</html>
